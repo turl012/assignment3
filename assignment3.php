@@ -1,7 +1,8 @@
 <?php
   include 'ParentClass.php';
-  
-  $buttonFactory = new ParentClass("Joe", "Button Factory", "Dog");
+  include 'ChildClass.php';
+
+  $buttonFactory = new ChildClass("Joe", "Button Factory", "Dog", "No");
 ?>
 
 <!doctype html>
@@ -13,7 +14,42 @@
   <link rel="stylesheet" href="assignment3.css">
 </head>
 <body>
-  <?= $buttonFactory; ?>
-  
+  <h1>My Favourite Camp Song!</h1>
+  <p>
+    <?= $buttonFactory; ?>
+  </p>
+
+  <p>He said "Push the button with your right hand"</p>
+
+  <p>
+    <?= $buttonFactory; ?>
+  </p>
+
+  <p>He said "Push the button with your left hand"</p>
+
+  <p>
+    <?= $buttonFactory; ?>
+  </p>
+
+  <p>He said "Push the button with your right foot"</p>
+
+  <p>
+    <?= $buttonFactory; ?>
+  </p>
+
+  <p>He said "Push the button with your left foot"</p>
+
+  <p>
+    <?= $buttonFactory; ?>
+  </p>
+
+  <p>He said "Push the button with your tounge"</p>
+
+  <?= $buttonFactory->setStatus("YES!"); ?>
+
+  <p>
+    <?= $buttonFactory; ?>
+  </p>
+
 </body>
 </html>
