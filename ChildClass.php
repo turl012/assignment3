@@ -1,6 +1,6 @@
 <?php 
-	// this file will extend PArentClass.php
+  // this file will extend ParentClass.php
 
-	class ChildClass extends ParentClass {
-		
-	}
+  class ChildClass extends ParentClass {
+    
+  }
