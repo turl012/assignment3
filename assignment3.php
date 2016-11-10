@@ -3,6 +3,9 @@
   include 'ChildClass.php';
 
   $buttonFactory = new ChildClass("Joe", "Button Factory", "Dog", "No");
+  
+  # This is a comment
+  
 ?>
 
 <!doctype html>
